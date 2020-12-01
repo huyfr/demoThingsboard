@@ -3,21 +3,21 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './components/login/login.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {AdministrationModule} from "./administration/administration.module";
+import {LoginModule} from "./authGuard/login/login.module";
 
 @NgModule({
   declarations: [
-    AppComponent,
-    LoginComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
-    AdministrationModule
+    AdministrationModule,
+    LoginModule
   ],
   providers: [],
   bootstrap: [AppComponent]

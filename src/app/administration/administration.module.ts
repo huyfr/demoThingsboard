@@ -6,6 +6,7 @@ import { AdministrationComponent } from './administration.component';
 import {SidebarComponent} from "./components/home/sidebar/sidebar.component";
 import {TopnavComponent} from "./components/home/topnav/topnav.component";
 import {OverviewComponent} from "./components/overview/overview.component";
+import { DevicesComponent } from './components/devices/devices.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import {OverviewComponent} from "./components/overview/overview.component";
     AdministrationComponent,
     SidebarComponent,
     TopnavComponent,
-    OverviewComponent
+    OverviewComponent,
+    DevicesComponent
   ],
   imports: [
     CommonModule,

@@ -3,15 +3,15 @@ import {Routes, RouterModule} from '@angular/router';
 
 import {AdministrationComponent} from './administration.component';
 import {OverviewComponent} from "./components/overview/overview.component";
+import {DevicesComponent} from "./components/devices/devices.component";
 
 const routes: Routes = [
   {
     path: '',
     component: AdministrationComponent,
     children: [
-      {
-        path: 'overview', component: OverviewComponent
-      }
+      {path: 'overview', component: OverviewComponent},
+      {path: 'devices', component: DevicesComponent}
     ]
   }
 ];
