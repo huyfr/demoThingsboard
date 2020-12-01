@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {Router} from "@angular/router";
 
@@ -29,7 +29,7 @@ export class LoginComponent implements OnInit {
       const {username, password} = this.loginForm.value;
       console.trace("Go into login function");
       console.info("Login with username: " + username + ", password: " + password);
-      this.router.navigateByUrl('/admin')
+      this.router.navigateByUrl('/admin/overview')
     } else {
       console.error("Cannot login!")
     }
