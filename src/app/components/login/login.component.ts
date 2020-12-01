@@ -29,7 +29,7 @@ export class LoginComponent implements OnInit {
       const {username, password} = this.loginForm.value;
       console.trace("Go into login function");
       console.info("Login with username: " + username + ", password: " + password);
-      this.router.navigateByUrl('/home')
+      this.router.navigateByUrl('/admin')
     } else {
       console.error("Cannot login!")
     }
