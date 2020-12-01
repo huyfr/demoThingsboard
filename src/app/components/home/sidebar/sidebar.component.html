@@ -1,65 +1,82 @@
-<div class="sidebar" data-color="yellow">
-  <!--
-    Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
--->
-  <div class="logo">
-    <a href="http://www.creative-tim.com" class="simple-text logo-mini">
-      CT
-    </a>
-    <a href="http://www.creative-tim.com" class="simple-text logo-normal">
-      Creative Tim
-    </a>
+<!-- sidebar -->
+<div class="ui sidebar inverted vertical menu sidebar-menu" id="sidebar">
+  <div class="item">
+    <div class="header">General</div>
+    <div class="menu">
+      <a class="item">
+        <div>
+          <i class="icon tachometer alternate"></i>
+          Dashboard
+        </div>
+      </a>
+    </div>
   </div>
-  <div class="sidebar-wrapper" id="sidebar-wrapper">
-    <ul class="nav">
-      <li class="active ">
-        <a href="./dashboard.html">
-          <i class="now-ui-icons design_app"></i>
-          <p>Dashboard</p>
-        </a>
-      </li>
-      <li>
-        <a href="./icons.html">
-          <i class="now-ui-icons education_atom"></i>
-          <p>Icons</p>
-        </a>
-      </li>
-      <li>
-        <a href="./map.html">
-          <i class="now-ui-icons location_map-big"></i>
-          <p>Maps</p>
-        </a>
-      </li>
-      <li>
-        <a href="./notifications.html">
-          <i class="now-ui-icons ui-1_bell-53"></i>
-          <p>Notifications</p>
-        </a>
-      </li>
-      <li>
-        <a href="./user.html">
-          <i class="now-ui-icons users_single-02"></i>
-          <p>User Profile</p>
-        </a>
-      </li>
-      <li>
-        <a href="./tables.html">
-          <i class="now-ui-icons design_bullet-list-67"></i>
-          <p>Table List</p>
-        </a>
-      </li>
-      <li>
-        <a href="./typography.html">
-          <i class="now-ui-icons text_caps-small"></i>
-          <p>Typography</p>
-        </a>
-      </li>
-      <li class="active-pro">
-        <a href="./upgrade.html">
-          <i class="now-ui-icons arrows-1_cloud-download-93"></i>
-          <p>Upgrade to PRO</p>
-        </a>
-      </li>
-    </ul>
+  <div class="item">
+    <div class="header">
+      Administration
+    </div>
+    <div class="menu">
+      <a class="item">
+        <div><i class="cogs icon"></i>Settings</div>
+      </a>
+      <a class="item">
+        <div><i class="users icon"></i>Team</div>
+      </a>
+    </div>
+  </div>
+
+  <a href="#" class="item">
+    <div>
+      <i class="icon chart line"></i>
+      Charts
+    </div>
+  </a>
+
+  <a class="item">
+    <div>
+      <i class="icon lightbulb"></i>
+      Apps
+    </div>
+  </a>
+  <div class="item">
+    <div class="header">Other</div>
+    <div class="menu">
+      <a href="#" class="item">
+        <div>
+          <i class="icon envelope"></i>
+          Messages
+        </div>
+      </a>
+
+      <a href="#" class="item">
+        <div>
+          <i class="icon calendar alternate"></i>
+          Calendar
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="item">
+    <form action="#">
+      <div class="ui mini action input">
+        <input type="text" placeholder="Search..." />
+        <button class="ui mini icon button">
+          <i class=" search icon"></i>
+        </button>
+      </div>
+    </form>
+  </div>
+  <div class="ui segment inverted">
+    <div class="ui tiny olive inverted progress">
+      <div class="bar" style="width: 54%"></div>
+      <div class="label">Monthly Bandwidth</div>
+    </div>
+
+    <div class="ui tiny teal inverted progress">
+      <div class="bar" style="width:78%"></div>
+      <div class="label">Disk Usage</div>
+    </div>
   </div>
 </div>
+<!-- sidebar -->

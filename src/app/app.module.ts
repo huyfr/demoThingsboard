@@ -7,13 +7,15 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {SidebarComponent} from "./components/home/sidebar/sidebar.component";
+import { TopnavComponent } from './components/home/topnav/topnav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LoginComponent,
-    SidebarComponent
+    SidebarComponent,
+    TopnavComponent
   ],
   imports: [
     BrowserModule,
