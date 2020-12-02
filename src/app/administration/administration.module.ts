@@ -7,6 +7,8 @@ import {SidebarComponent} from "./components/home/sidebar/sidebar.component";
 import {TopnavComponent} from "./components/home/topnav/topnav.component";
 import {OverviewComponent} from "./components/overview/overview.component";
 import { DevicesComponent } from './components/devices/devices.component';
+import {AddDeviceComponent} from "./components/devices/add-device/add-device.component";
+import {ReactiveFormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -15,11 +17,13 @@ import { DevicesComponent } from './components/devices/devices.component';
     SidebarComponent,
     TopnavComponent,
     OverviewComponent,
-    DevicesComponent
+    DevicesComponent,
+    AddDeviceComponent
   ],
   imports: [
     CommonModule,
-    AdministrationRoutingModule
+    AdministrationRoutingModule,
+    ReactiveFormsModule
   ]
 })
 export class AdministrationModule { }
