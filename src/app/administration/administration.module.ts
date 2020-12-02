@@ -12,7 +12,6 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import { DetailsDeviceComponent } from './components/devices/details-device/details-device.component';
 
-
 @NgModule({
   declarations: [
     AdministrationComponent,

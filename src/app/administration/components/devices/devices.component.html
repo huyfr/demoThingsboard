@@ -35,9 +35,9 @@
             <td>Name</td>
             <td>Type</td>
           </tr>
-          <tr *ngFor="let device of listOfDevices; index as i">
+          <tr *ngFor="let device of listOfDevices">
             <td>{{device.createdTime | date:'shortDate'}}</td>
-            <td>{{device.name}}</td>
+            <td><a routerLink="/details/{{device.id.id}}">{{device.name}}</a></td>
             <td>{{device.type}}</td>
           </tr>
           </tbody>
