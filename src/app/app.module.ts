@@ -8,8 +8,6 @@ import {AdministrationModule} from "./administration/administration.module";
 import {LoginModule} from "./authGuard/login.module";
 import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import {JwtInterceptor} from "./authGuard/guard/jwt.interceptor";
-import {LoginRoutingModule} from "./authGuard/login-routing.module";
-import {AdministrationRoutingModule} from "./administration/administration-routing.module";
 
 @NgModule({
   declarations: [

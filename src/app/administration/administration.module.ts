@@ -8,7 +8,8 @@ import {TopnavComponent} from "./components/home/topnav/topnav.component";
 import {OverviewComponent} from "./components/overview/overview.component";
 import { DevicesComponent } from './components/devices/devices.component';
 import {AddDeviceComponent} from "./components/devices/add-device/add-device.component";
-import {ReactiveFormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
 
 
 @NgModule({
@@ -23,7 +24,9 @@ import {ReactiveFormsModule} from "@angular/forms";
   imports: [
     CommonModule,
     AdministrationRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule
   ]
 })
 export class AdministrationModule { }

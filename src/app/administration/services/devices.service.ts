@@ -19,4 +19,8 @@ export class DevicesService {
   public saveDevice(device: Device): Observable<Device> {
     return this.httpClient.post<Device>(BACKEND_LINK + '/api/device', device);
   }
+
+  public findAllDevicesFromTenant(): Observable<any> {
+    return this.httpClient.get<any>(BACKEND_LINK + '/api/tenant/devices?pageSize=10&page=1');
+  }
 }
