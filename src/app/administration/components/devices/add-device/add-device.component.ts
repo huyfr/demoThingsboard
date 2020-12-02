@@ -21,8 +21,8 @@ export class AddDeviceComponent implements OnInit {
 
   ngOnInit(): void {
     this.saveDeviceForm = this.formBuilder.group({
-      deviceName: ['', [Validators.required]],
-      deviceType: ['', [Validators.required]]
+      name: ['', [Validators.required]],
+      type: ['', [Validators.required]]
     });
   }
 
@@ -31,7 +31,6 @@ export class AddDeviceComponent implements OnInit {
     if (this.saveDeviceForm.valid) {
       this.submitted = true;
       this.newDevice = this.saveDeviceForm.value;
-      this.newDevice.createdTime = +Date.now();
       this.deviceService.saveDevice(this.newDevice).subscribe(
         result => {
           console.info(this.newDevice);

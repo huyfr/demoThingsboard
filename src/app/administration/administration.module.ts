@@ -10,6 +10,7 @@ import { DevicesComponent } from './components/devices/devices.component';
 import {AddDeviceComponent} from "./components/devices/add-device/add-device.component";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
+import { DetailsDeviceComponent } from './components/devices/details-device/details-device.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import {HttpClientModule} from "@angular/common/http";
     TopnavComponent,
     OverviewComponent,
     DevicesComponent,
-    AddDeviceComponent
+    AddDeviceComponent,
+    DetailsDeviceComponent
   ],
   imports: [
     CommonModule,
