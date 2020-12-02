@@ -61,6 +61,23 @@ export class DetailsDeviceComponent implements OnInit {
     }
   }
 
+  delete(deviceId: string): void {
+    let verify = confirm("Do u want to delete?")
+    if (verify) {
+      this.submitted = true;
+      this.deviceService.deleteDeviceByDeviceId(deviceId).subscribe(
+        result => {
+          this.router.navigateByUrl("/admin/devices");
+        }, error => {
+          console.error("Cannot delete device!");
+        }
+      )
+    } else {
+      this.submitted = false;
+      console.error("Error when verify");
+    }
+  }
+
   get rfc(): any {
     return this.editDeviceForm.controls;
   }

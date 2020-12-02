@@ -1,6 +1,17 @@
 <div class="pusher">
   <div class="main-content">
     <div class="ui grid stackable padded">
+      <div class="four wide computer eight wide tablet sixteen wide mobile column">
+        <div class="ui fluid card">
+          <div class="extra content">
+            <div class="ui two buttons">
+              <button type="button" class="ui red button" (click)="delete(currentDeviceId)">Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ui grid stackable padded">
       <form class="ui form segment" [formGroup]="editDeviceForm" (ngSubmit)="save()">
         <div class="field">
           <label>Name</label>

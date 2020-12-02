@@ -3,16 +3,6 @@
     <div class="ui grid stackable padded">
       <div class="four wide computer eight wide tablet sixteen wide mobile column">
         <div class="ui fluid card">
-          <div class="content">
-            <div class="ui right floated header red">
-              <i class="icon shopping cart"></i>
-            </div>
-            <div class="header">
-              <div class="ui red header">3958</div>
-            </div>
-            <div class="meta">orders</div>
-            <div class="description">Elliot requested permission to view your contact details</div>
-          </div>
           <div class="extra content">
             <div class="ui two buttons">
               <a class="ui red button" routerLink="/admin/add-device">Add device</a>
@@ -37,7 +27,7 @@
           </tr>
           <tr *ngFor="let device of listOfDevices">
             <td>{{device.createdTime | date:'shortDate'}}</td>
-            <td><a routerLink="/details/{{device.id.id}}">{{device.name}}</a></td>
+            <td><a routerLink="/admin/device/details/{{device.id.id}}">{{device.name}}</a></td>
             <td>{{device.type}}</td>
           </tr>
           </tbody>

@@ -15,8 +15,7 @@ const routes: Routes = [
       {path: 'overview', component: OverviewComponent},
       {path: 'devices', component: DevicesComponent},
       {path: 'add-device', component: AddDeviceComponent},
-      {path: 'details/:deviceId', component: DetailsDeviceComponent}
-
+      {path: 'device/details/:deviceId', component: DetailsDeviceComponent}
     ]
   }
 ];

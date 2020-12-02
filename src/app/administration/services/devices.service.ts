@@ -27,4 +27,8 @@ export class DevicesService {
   public findDeviceByDeviceId(deviceId: string): Observable<Device> {
     return this.httpClient.get<Device>(BACKEND_LINK + `/api/device/${deviceId}`);
   }
+
+  public deleteDeviceByDeviceId(deviceId: string): Observable<Device> {
+    return this.httpClient.delete<Device>(BACKEND_LINK + `/api/device/${deviceId}`);
+  }
 }
