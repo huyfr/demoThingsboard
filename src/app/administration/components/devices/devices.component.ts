@@ -28,7 +28,4 @@ export class DevicesComponent implements OnInit {
     )
     console.trace("Get out onInit")
   }
-
-
-
 }

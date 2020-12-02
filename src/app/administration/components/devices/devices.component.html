@@ -36,7 +36,7 @@
             <td>Type</td>
           </tr>
           <tr *ngFor="let device of listOfDevices; index as i">
-            <td>{{device.createdTime}}</td>
+            <td>{{device.createdTime | date:'shortDate'}}</td>
             <td>{{device.name}}</td>
             <td>{{device.type}}</td>
           </tr>
