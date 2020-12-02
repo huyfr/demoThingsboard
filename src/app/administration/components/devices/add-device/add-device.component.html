@@ -1,0 +1,23 @@
+<div class="pusher">
+  <div class="main-content">
+    <div class="ui grid stackable padded">
+      <form class="ui form" [formGroup]="saveDeviceForm" (ngSubmit)="save()">
+        <div class="field">
+          <label>Name</label>
+          <input type="text" name="name" placeholder="Name" formControlName="name">
+          <div *ngIf="submitted && rfc.name.errors">
+            <small *ngIf="rfc.name.errors.required">Please enter your device name.</small>
+          </div>
+        </div>
+        <div class="field">
+          <label>Type</label>
+          <input type="text" name="type" placeholder="Type" formControlName="type">
+          <div *ngIf="submitted && rfc.type.errors">
+            <small *ngIf="rfc.type.errors.required">Please enter your device type.</small>
+          </div>
+        </div>
+        <button class="ui button" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>

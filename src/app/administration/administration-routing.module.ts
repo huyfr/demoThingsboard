@@ -4,6 +4,7 @@ import {Routes, RouterModule} from '@angular/router';
 import {AdministrationComponent} from './administration.component';
 import {OverviewComponent} from "./components/overview/overview.component";
 import {DevicesComponent} from "./components/devices/devices.component";
+import {AddDeviceComponent} from "./components/devices/add-device/add-device.component";
 
 const routes: Routes = [
   {
@@ -11,7 +12,8 @@ const routes: Routes = [
     component: AdministrationComponent,
     children: [
       {path: 'overview', component: OverviewComponent},
-      {path: 'devices', component: DevicesComponent}
+      {path: 'devices', component: DevicesComponent},
+      {path: 'add-device', component: AddDeviceComponent}
     ]
   }
 ];
