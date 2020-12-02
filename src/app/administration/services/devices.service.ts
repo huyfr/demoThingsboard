@@ -24,7 +24,7 @@ export class DevicesService {
     return this.httpClient.get<any>(BACKEND_LINK + '/api/tenant/devices?pageSize=10&page=1');
   }
 
-  public findDeviceByDeviceId(deviceId: number): Observable<Device> {
-    return this.httpClient.get<Device>(BACKEND_LINK + `/api/devices/${deviceId}`);
+  public findDeviceByDeviceId(deviceId: string): Observable<Device> {
+    return this.httpClient.get<Device>(BACKEND_LINK + `/api/device/${deviceId}`);
   }
 }

@@ -4,7 +4,7 @@
       <form class="ui form segment" [formGroup]="saveDeviceForm" (ngSubmit)="save()">
         <div class="field">
           <label>Name</label>
-          <input type="text" name="name" placeholder="Name" formControlName="name">
+          <input type="text" name="name" placeholder="Name" formControlName="name" >
           <div *ngIf="submitted && rfc.name.errors" class="ui basic red pointing prompt label transition visible">
             <small *ngIf="rfc.name.errors.required">Please enter your device name.</small>
           </div>
