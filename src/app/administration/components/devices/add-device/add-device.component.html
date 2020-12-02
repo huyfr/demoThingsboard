@@ -1,24 +1,25 @@
 <div class="pusher">
   <div class="main-content">
     <div class="ui grid stackable padded">
-      <form class="ui form" [formGroup]="saveDeviceForm" (ngSubmit)="save()">
+      <form class="ui form segment" [formGroup]="saveDeviceForm" (ngSubmit)="save()">
         <div class="field">
           <label>Name</label>
-          <input type="text" name="name" placeholder="Name" formControlName="name">
-          <div *ngIf="submitted && rfc.name.errors">
-            <small *ngIf="rfc.name.errors.required">Please enter your device name.</small>
+          <input type="text" name="name" placeholder="Name" formControlName="deviceName">
+          <div *ngIf="submitted && rfc.deviceName.errors" class="ui basic red pointing prompt label transition visible">
+            <small *ngIf="rfc.deviceName.errors.required">Please enter your device name.</small>
           </div>
         </div>
+
         <div class="field">
           <label>Type</label>
-          <input type="text" name="type" placeholder="Type" formControlName="type">
-          <div *ngIf="submitted && rfc.type.errors">
-            <small *ngIf="rfc.type.errors.required">Please enter your device type.</small>
-          </div>
+          <input type="text" name="type" placeholder="Type" formControlName="deviceType">
+        </div>
+        <div *ngIf="submitted && rfc.deviceType.errors">
+          <small *ngIf="rfc.deviceType.errors.required">Please enter your device type.</small>
         </div>
         <button class="ui button" type="submit">Submit</button>
       </form>
     </div>
-    <button class="ui button" type="button" (click)="save1()">Submit1</button>
   </div>
 </div>
+

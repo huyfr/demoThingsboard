@@ -37,7 +37,6 @@ export class LoginComponent implements OnInit {
       this.authService.login(this.loginRequest).subscribe(
         result => {
           this.loginResponse = result;
-          this
           console.info("Login with username: " + this.loginRequest.username + ", password: " + this.loginRequest.password);
           console.info("Resoponse with token: " + this.loginResponse.token + ", refreshToken: " + this.loginResponse.refreshToken);
           this.router.navigateByUrl('/admin/overview')

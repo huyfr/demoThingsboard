@@ -17,13 +17,12 @@ export class AddDeviceComponent implements OnInit {
 
   constructor(private formBuilder: FormBuilder,
               private router: Router,
-              private deviceService: DevicesService
-  ) { }
+              private deviceService: DevicesService) { }
 
   ngOnInit(): void {
     this.saveDeviceForm = this.formBuilder.group({
-      name: ['', [Validators.required]],
-      type: ['', [Validators.required]]
+      deviceName: ['', [Validators.required]],
+      deviceType: ['', [Validators.required]]
     });
   }
 
@@ -41,42 +40,13 @@ export class AddDeviceComponent implements OnInit {
           console.error("Cannot save device");
         }
       )
+    } else {
+      console.error("Form is invalid. Cannot save device");
     }
     console.trace("Get out save device function");
   }
 
   get rfc(): any {
     return this.saveDeviceForm.controls;
-  }
-
-  deviceTemp = {
-  "createdTime": 1605059648826,
-  "additionalInfo": {
-    "gateway": false,
-    "description": null
-  },
-  "tenantId": {
-    "entityType": "TENANT",
-    "id": "5e1dd590-1d1e-11eb-aa50-b3d3cd7ce18b"
-  },
-  "customerId": {
-    "entityType": "CUSTOMER",
-    "id": "13814000-1dd2-11b2-8080-808080808080"
-  },
-  "name": "testPostman4",
-  "type": "test",
-  "label": null,
-  "customerTitle": null,
-  "customerIsPublic": false
-}
-
-  save1() {
-    this.deviceService.saveDevice1(this.deviceTemp).subscribe(
-      result => {
-        console.log("success");
-      }, error => {
-        console.log("error")
-      }
-    )
   }
 }
