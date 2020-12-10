@@ -21,7 +21,7 @@ export class DevicesService {
   }
 
   public findAllDevicesFromTenant(): Observable<any> {
-    return this.httpClient.get<any>(BACKEND_LINK + '/api/tenant/devices?pageSize=10&page=1');
+    return this.httpClient.get<any>(BACKEND_LINK + '/api/tenant/devices?pageSize=5&page=1');
   }
 
   public findDeviceByDeviceId(deviceId: string): Observable<Device> {
